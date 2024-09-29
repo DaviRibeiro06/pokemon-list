@@ -1,0 +1,78 @@
+/* Cor de fundo da página */
+body {
+    background: linear-gradient(to right, #015cac, #005190); /* Gradiente de duas cores */
+    margin: 0; 
+    font-family: Arial, sans-serif;
+}
+
+/* Personalização do título "Pokémons Favoritos" */
+.custom-title {
+    font-size: 3em; /* Tamanho da fonte para telas grandes */
+    text-align: center;
+    font-weight: bold;
+    
+    /* Gradiente no texto */
+    background: linear-gradient(45deg, #ffcc00, #ff6347, #ff4500);
+    
+    /* Vendor prefixes for background-clip */
+    -webkit-background-clip: text; /* Chrome, Safari, newer iOS versions */
+    -moz-background-clip: text;    /* Firefox (older versions) */
+    background-clip: text;         /* Standard */
+
+    /* Cor transparente para mostrar o fundo */
+    color: transparent;
+
+    /* Sombra do texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+
+    /* Flexbox para centralizar conteúdo (remova se não necessário) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, text-shadow 0.3s; /* Para animações suaves */
+
+    /* Responsividade */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Animação ao passar o mouse */
+.custom-title:hover {
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+/* Estilo dos cards de Pokémon */
+.pokemonCard {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 15px;
+    width: 180px; /* Pode ser ajustado para 90% para maior responsividade */
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+/* Efeito de hover no card */
+.pokemonCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do nome do Pokémon */
+.pokemonCard h5 {
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #000000;
+}
+
+/* Estilo da imagem do Pokémon */
+.pokemonCard img {
+    width: 100px;
+    height: 100px;
+}
+

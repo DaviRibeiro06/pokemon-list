@@ -1,0 +1,118 @@
+/* Cor de fundo da página */
+body {
+    background: linear-gradient(to right, #015cac, #005190); /* Gradiente de duas cores */
+    margin: 0; 
+    font-family: Arial, sans-serif;
+}
+
+/* Personalização do título "Pokémon App" */
+.custom-title {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    
+    /* Gradiente no texto */
+    background: linear-gradient(45deg, #ffcc00, #ff6347, #ff4500);
+    
+    /* Vendor prefixes for background-clip */
+    -webkit-background-clip: text; /* Chrome, Safari, newer iOS versions */
+    -moz-background-clip: text;    /* Firefox (older versions) */
+    background-clip: text;         /* Standard */
+
+    /* Color transparent so background shows through text */
+    color: transparent;
+
+    /* Sombra do texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do ícone ao lado do título */
+.custom-title img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Animação suave para o título */
+.custom-title:hover {
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilo dos cards de Pokémon */
+.pokemonCard {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(253, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 15px;
+    width: 180px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+/* Efeito de hover no card */
+.pokemonCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do nome do Pokémon */
+.pokemonCard h5 {
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #000000;
+}
+
+/* Estilo da imagem do Pokémon */
+.pokemonCard img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Botão de favoritar */
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.favorite-btn.active {
+    color: gold; /* Estrela dourada quando favorito */
+}
+
+.favorite-btn:hover {
+    color: #ffcc00;
+}
+
+/* Estilizando o botão de favoritos */
+.btn-warning {
+    background-color: #ffdd57;
+    border-color: #ffcc00;
+    color: white;
+}
+
+/* Ajustando a exibição da lista de pokémons */
+#pokemonList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
