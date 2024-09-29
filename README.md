@@ -2,6 +2,10 @@
 
 Um aplicativo web simples para gerenciar uma lista de Pokémons favoritos. Utilize a PokeAPI para buscar informações sobre os Pokémons e armazená-los no `localStorage` do navegador.
 
+![Captura de Tela do Pokémons](print/list-pokemon.PNG)
+
+![Captura de Tela do Pokémons Favoritos](print/favorite-list.PNG)
+
 ## Funcionalidades
 
 - **Listar Pokémons Favoritos**: Visualize seus Pokémons favoritos em um layout responsivo.
