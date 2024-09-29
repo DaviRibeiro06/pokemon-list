@@ -21,4 +21,4 @@ Um aplicativo web simples para gerenciar uma lista de Pokémons favoritos. Utili
 1. **Clone o repositório**:
 
    ```bash
-   git clone https://github.com/seu-usuario/pokemons-favoritos.git
+   git clone https://github.com/DaviRibeiro06/pokemon-list.git
